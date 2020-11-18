@@ -99,6 +99,12 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+
+        'cloud' => [
+            'driver' => 'custom',
+            'via' => App\Logging\CreateCloudLogger::class,
+            'level' => 'debug',
+        ],
     ],
 
 ];

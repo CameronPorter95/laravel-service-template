@@ -13,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->instance('path.storage', env('APP_STORAGE', base_path() . '/storage'));
     }
 
     /**

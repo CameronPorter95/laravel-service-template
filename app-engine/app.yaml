@@ -1,0 +1,19 @@
+runtime: php73
+
+handlers:
+- url: /(.*\.(gif|png|jpg|css|js))$
+  static_files: public/\1
+  upload: public/.*\.(gif|png|jpg|css|js)$
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
+
+env_variables:
+  ## Put production environment variables here.
+  APP_KEY: SlzKLnDWBVj2EZEN0Dy5j3Mv3Erd240i+BZzoRMaFEA=
+  APP_STORAGE: /tmp
+  VIEW_COMPILED_PATH: /tmp
+  LOG_CHANNEL: cloud
+  SESSION_DRIVER: cookie
