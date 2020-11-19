@@ -50,7 +50,7 @@ return [
 
         'file' => [
             'driver' => 'file',
-            'path' => storage_path('framework/cache/data'),
+            'path' => env('APP_STORAGE', storage_path()).DIRECTORY_SEPARATOR.'framework/cache/data',
         ],
 
         'memcached' => [

@@ -10,6 +10,9 @@ handlers:
   redirect_http_response_code: 301
   script: auto
 
+- url: /
+  script: auto
+
 env_variables:
   ## Put production environment variables here.
   APP_KEY: SlzKLnDWBVj2EZEN0Dy5j3Mv3Erd240i+BZzoRMaFEA=
