@@ -28,9 +28,8 @@ return [
     |
     */
 
-    'compiled' => env(
-        'VIEW_COMPILED_PATH',
-        realpath(env('APP_STORAGE', storage_path()).DIRECTORY_SEPARATOR.'framework/views')
+    'compiled' => realpath(
+        env('VIEW_COMPILED_PATH') ?? storage_path().DIRECTORY_SEPARATOR.'framework/views'
     ),
 
 ];

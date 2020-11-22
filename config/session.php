@@ -59,7 +59,7 @@ return [
     |
     */
 
-    'files' => '/tmp',//env('APP_STORAGE', storage_path()).DIRECTORY_SEPARATOR.'framework/sessions',
+    'files' => env('APP_STORAGE') ??  storage_path().DIRECTORY_SEPARATOR.'framework/sessions',
 
     /*
     |--------------------------------------------------------------------------

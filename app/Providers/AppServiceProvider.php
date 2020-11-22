@@ -23,10 +23,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // print_r(resource_path('views'));
-        // print_r(file_exists(resource_path('views').'/welcome.blade.php') ? "true" : "false");
+        print_r(resource_path('views'));
+        print_r(file_exists(resource_path('views').'/welcome.blade.php') ? "true" : "false");
         // exit;
-        // print_r(realpath(base_path('resources/views')));
+        print_r(realpath(base_path('resources/views')));
         // exit;
     }
 }
