@@ -12,7 +12,7 @@ handlers:
 
 env_variables:
   ## Put production environment variables here.
-  APP_KEY: base64:SlzKLnDWBVj2EZEN0Dy5j3Mv3Erd240i+BZzoRMaFEA=
+  APP_KEY: 
   APP_STORAGE: /tmp
   VIEW_COMPILED_PATH: /tmp
   LOG_CHANNEL: cloud
